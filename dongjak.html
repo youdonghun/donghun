@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+
+    h2 {
+        margin-top: 0%;
+        font-size: 150%;
+        color: white;
+        text-decoration: none;
+        font-family: "Work Sans", sans-serif;
+        text-decoration: none;
+        font-weight: 300;
+        line-height: 1.65;
+        margin-bottom: 2%;
+    }
+
+    span {
+        font-size: 170%;
+        font-weight: 600;
+    }
+
+    body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .main {
+        text-align: center;
+        width: 100%;
+        margin-top: 3%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .content {
+        padding: 3%;
+    }
+
+    .pictures {
+        border-radius: 9px;
+        width: 100%;
+        height: auto;
+        transition: transform 0.15s ease-in-out;
+    }
+
+    .pictures:hover {
+      transform: scale(1.07);
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="column">
+            <div class="content">
+                <a href="https://map.naver.com/v5/entry/place/18726869?lng=126.9819963&lat=37.5108250&placePath=%2Fhome%3Fentry%3Dpll"><h2>촬영장소<br><span>동작대교</span></h2></a>
+                <img class="pictures" src="media/10:1_1.jpg"><p></p>
+                <img class="pictures" src="media/dongjak4.jpg"><p></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img class="pictures" src="media/dongjak1.jpg"><p></p>
+                <img class="pictures" src="media/dongjak5.jpg"><p></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img class="pictures" src="media/dongjak2.jpg"><p></p>
+                <img class="pictures" src="media/dongjak6.jpg"><p></p>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="content">
+                <img class="pictures" src="media/dongjak3.jpg"><p></p>
+                <img class="pictures" src="media/dongjak7.jpg"><p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
