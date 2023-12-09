@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <style>
 
+    .profile {
+        text-align: center;
+        border-radius: 500%;
+        width: 70%;
+        height: 70%;
+    }
+
     h2 {
         margin-top: 0%;
         font-size: 150%;
@@ -14,6 +21,7 @@
         font-weight: 300;
         line-height: 1.65;
         margin-bottom: 2%;
+        line-height: 130%;
     }
 
     span {
@@ -65,38 +73,45 @@
     <div class="main">
         <div class="column">
             <div class="content">
-                <a href="https://naver.me/x0zkeIjo"><h2>촬영장소<br><span>해방촌</span></h2></a>
-                <img class="pictures" src="media/5:20_1.jpg"><p></p>
-                <img class="pictures" src="media/haebang1.jpg"><p></p>
-                <img class="pictures" src="media/haebang5.jpg"><p></p>
+                <a href="donghun.html"><img class="profile" src="media/profile.jpg"></a>
+                <h2>촬영장소<br><a style="text-decoration: none; color: white;" href="https://naver.me/x0zkeIjo"><span>해방촌</span></h2></a>
+                <img class="pictures" src="media/5:20_1.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang1.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang5.jpg" onclick="openImageInNewWindow"><p></p>
 
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/haebang2.jpg"><p></p>
-                <img class="pictures" src="media/haebang6.jpg"><p></p>
-                <img class="pictures" src="media/haebang9.jpg"><p></p>
+                <img class="pictures" src="media/haebang2.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang6.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang9.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/haebang3.jpg"><p></p>
-                <img class="pictures" src="media/haebang7.jpg"><p></p>
-                <img class="pictures" src="media/haebang10.jpg"><p></p>
+                <img class="pictures" src="media/haebang3.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang7.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang10.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
         
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/haebang4.jpg"><p></p>
-                <img class="pictures" src="media/haebang8.jpg"><p></p>
-                <img class="pictures" src="media/haebang11.jpg"><p></p>
-                <img class="pictures" src="media/haebang12.jpg"><p></p>
+                <img class="pictures" src="media/haebang4.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang8.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang11.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/haebang12.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
     </div>
+
+    <script>
+        function openImageInNewWindow(imageSrc) {
+          window.open(imageSrc, '_blank');
+        }
+      </script>
 </body>
 </html>

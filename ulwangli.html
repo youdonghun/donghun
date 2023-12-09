@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <style>
 
+    .profile {
+        text-align: center;
+        border-radius: 500%;
+        width: 70%;
+        height: 70%;
+    }
+
+
     h2 {
         margin-top: 0%;
         font-size: 150%;
@@ -14,6 +22,7 @@
         font-weight: 300;
         line-height: 1.65;
         margin-bottom: 2%;
+        line-height: 130%;
     }
 
     span {
@@ -65,37 +74,44 @@
     <div class="main">
         <div class="column">
             <div class="content">
-                <a href="https://naver.me/5lxoMThv"><h2>촬영장소<br><span>을왕리 해수욕장</span></h2></a>
-                <img class="pictures" src="media/11:21_5.jpg"><p></p>
-                <img class="pictures" src="media/ul3.jpg"><p></p>
-                <img class="pictures" src="media/ul7.jpg"><p></p>
+                <a href="donghun.html"><img class="profile" src="media/profile.jpg"></a>
+                <h2>촬영장소<br><a style="text-decoration: none; color: white;" href="https://naver.me/5lxoMThv"><span>을왕리 해수욕장</span></h2></a>
+                <img class="pictures" src="media/11:21_5.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul3.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul7.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/11:21_4.jpg"><p></p>
-                <img class="pictures" src="media/ul4.jpg"><p></p>
-                <img class="pictures" src="media/ul8.jpg"><p></p>
-                <img class="pictures" src="media/ul11.jpg"><p></p>
+                <img class="pictures" src="media/11:21_4.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul4.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul8.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul11.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/ul1.jpg"><p></p>
-                <img class="pictures" src="media/ul5.jpg"><p></p>
-                <img class="pictures" src="media/ul9.jpg"><p></p>
+                <img class="pictures" src="media/ul1.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul5.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul9.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
         
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/ul2.jpg"><p></p>
-                <img class="pictures" src="media/ul6.jpg"><p></p>
-                <img class="pictures" src="media/ul10.jpg"><p></p>
+                <img class="pictures" src="media/ul2.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul6.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/ul10.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
     </div>
+
+    <script>
+        function openImageInNewWindow(imageSrc) {
+          window.open(imageSrc, '_blank');
+        }
+      </script>
 </body>
 </html>

@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <style>
 
+    .profile {
+        text-align: center;
+        border-radius: 500%;
+        width: 70%;
+        height: 70%;
+    }
+
+
     h2 {
         margin-top: 0%;
         font-size: 150%;
@@ -14,6 +22,7 @@
         font-weight: 300;
         line-height: 1.65;
         margin-bottom: 2%;
+        line-height: 130%;
     }
 
     span {
@@ -65,34 +74,41 @@
     <div class="main">
         <div class="column">
             <div class="content">
+                <a href="donghun.html"><img class="profile" src="media/profile.jpg"></a>
                 <h2><span>건물 디자인</span></h2>
-                <img class="pictures" src="media/pattern.jpg"><p></p>
-                <img class="pictures" src="media/pattern4.jpg"><p></p>
+                <img class="pictures" src="media/pattern.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/pattern4.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/pattern1.jpg"><p></p>
-                <img class="pictures" src="media/pattern5.jpg"><p></p>
-                <img class="pictures" src="media/pattern6.jpg"><p></p>
+                <img class="pictures" src="media/pattern1.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/pattern5.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/pattern6.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/pattern2.jpg"><p></p>
-                <img class="pictures" src="media/pattern7.jpg"><p></p>
-                <img class="pictures" src="media/pattern9.jpg"><p></p>
+                <img class="pictures" src="media/pattern2.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/pattern7.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/pattern9.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
         
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/pattern3.jpg"><p></p>
-                <img class="pictures" src="media/pattern8.jpg"><p></p>
+                <img class="pictures" src="media/pattern3.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/pattern8.jpg" onclick="openImageInNewWindow"><p></p>
             </div>
         </div>
     </div>
+
+    <script>
+        function openImageInNewWindow(imageSrc) {
+          window.open(imageSrc, '_blank');
+        }
+      </script>
 </body>
 </html>
