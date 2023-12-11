@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <style>
+    <meta charset="UTF-8">
+    <style>
+        .profile {
+            text-align: center;
+            border-radius: 500%;
+            width: 70%;
+            height: 70%;
+        }
 
-    .profile {
-        text-align: center;
-        border-radius: 500%;
-        width: 70%;
-        height: 70%;
-    }
+        h2 {
+            margin-top: 0%;
+            font-size: 150%;
+            color: white;
+            text-decoration: none;
+            font-family: "Work Sans", sans-serif;
+            text-decoration: none;
+            font-weight: 300;
+            line-height: 1.65;
+            margin-bottom: 2%;
+            line-height: 130%;
+        }
 
+        span {
+            font-size: 170%;
+            font-weight: 600;
+        }
 
-    h2 {
-        margin-top: 0%;
-        font-size: 150%;
-        color: white;
-        text-decoration: none;
-        font-family: "Work Sans", sans-serif;
-        text-decoration: none;
-        font-weight: 300;
-        line-height: 1.65;
-        margin-bottom: 2%;
-        line-height: 130%;
-    }
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-    span {
-        font-size: 170%;
-        font-weight: 600;
-    }
+        .main {
+            text-align: center;
+            width: 100%;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
 
-    body {
-        background-color: black;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+        .content {
+            padding: 3%;
+        }
 
-    .main {
-        text-align: center;
-        width: 100%;
-        margin-top: 3%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
+        .pictures {
+            border-radius: 9px;
+            width: 100%;
+            height: auto;
+            transition: transform 0.15s ease-in-out;
+        }
 
-    .content {
-        padding: 3%;
-    }
+        .pictures:hover {
+            transform: scale(1.07);
+        }
 
-    .pictures {
-        border-radius: 9px;
-        width: 100%;
-        height: auto;
-        transition: transform 0.15s ease-in-out;
-    }
-
-    .pictures:hover {
-      transform: scale(1.07);
-    }
-
-    .column {
-        float: left;
-        width: 25%;
-        height: 100%;
-        box-sizing: border-box;
-    }
-  </style>
+        .column {
+            float: left;
+            width: 25%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
+
 <body>
     <div class="main">
         <div class="column">
             <div class="content">
-                <a href="index.html"><img class="profile" src="media/profile.jpg"></a>
+                <a href="donghun.html"><img class="profile" src="media/profile.jpg"></a>
                 <h2>촬영장소<br><a style="text-decoration: none; color: white;" href="https://naver.me/G5Jckyum"><span>명륜당</span></h2></a>
-                <img class="pictures" src="media/myeng1.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/myeng6.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/myeng1.jpg" onclick="openImageInNewWindow('media/myeng1.jpg')"><p></p>
+                <img class="pictures" src="media/myeng6.jpg" onclick="openImageInNewWindow('media/myeng6.jpg')"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/myeng2.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/myeng3.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/myeng7.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/myeng2.jpg" onclick="openImageInNewWindow('media/myeng2.jpg')"><p></p>
+                <img class="pictures" src="media/myeng3.jpg" onclick="openImageInNewWindow('media/myeng3.jpg')"><p></p>
+                <img class="pictures" src="media/myeng7.jpg" onclick="openImageInNewWindow('media/myeng7.jpg')"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/myeng4.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/myeng8.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/myeng4.jpg" onclick="openImageInNewWindow('media/myeng4.jpg')"><p></p>
+                <img class="pictures" src="media/myeng8.jpg" onclick="openImageInNewWindow('media/myeng8.jpg')"><p></p>
             </div>
         </div>
-        
+
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/myeng5.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/myeng9.jpg" onclick="openImageInNewWindow"><p></p>
-
+                <img class="pictures" src="media/myeng5.jpg" onclick="openImageInNewWindow('media/myeng5.jpg')"><p></p>
+                <img class="pictures" src="media/myeng9.jpg" onclick="openImageInNewWindow('media/myeng9.jpg')"><p></p>
             </div>
         </div>
     </div>
 
     <script>
         function openImageInNewWindow(imageSrc) {
-          window.open(imageSrc, '_blank');
+            window.open(imageSrc, '_blank');
         }
-      </script>
+    </script>
 </body>
+
 </html>

@@ -1,114 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <style>
+    <meta charset="UTF-8">
+    <style>
+        .profile {
+            text-align: center;
+            border-radius: 500%;
+            width: 70%;
+            height: 70%;
+        }
 
-    .profile {
-        text-align: center;
-        border-radius: 500%;
-        width: 70%;
-        height: 70%;
-    }
+        h2 {
+            margin-top: 0%;
+            font-size: 150%;
+            color: white;
+            text-decoration: none;
+            font-family: "Work Sans", sans-serif;
+            text-decoration: none;
+            font-weight: 300;
+            line-height: 1.65;
+            margin-bottom: 2%;
+            line-height: 130%;
+        }
 
+        span {
+            font-size: 150%;
+            font-weight: 600;
+            line-height: 50%;
+        }
 
-    h2 {
-        margin-top: 0%;
-        font-size: 150%;
-        color: white;
-        text-decoration: none;
-        font-family: "Work Sans", sans-serif;
-        text-decoration: none;
-        font-weight: 300;
-        line-height: 1.65;
-        margin-bottom: 2%;
-        line-height: 130%;
-    }
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-    span {
-        font-size: 150%;
-        font-weight: 600;
-        line-height: 50%;
-    }
+        .main {
+            text-align: center;
+            width: 100%;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
 
-    body {
-        background-color: black;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+        .content {
+            padding: 3%;
+        }
 
-    .main {
-        text-align: center;
-        width: 100%;
-        margin-top: 3%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
+        .pictures {
+            border-radius: 9px;
+            width: 100%;
+            height: auto;
+            transition: transform 0.15s ease-in-out;
+        }
 
-    .content {
-        padding: 3%;
-    }
+        .pictures:hover {
+            transform: scale(1.07);
+        }
 
-    .pictures {
-        border-radius: 9px;
-        width: 100%;
-        height: auto;
-        transition: transform 0.15s ease-in-out;
-    }
-
-    .pictures:hover {
-      transform: scale(1.07);
-    }
-
-    .column {
-        float: left;
-        width: 25%;
-        height: 100%;
-        box-sizing: border-box;
-    }
-  </style>
+        .column {
+            float: left;
+            width: 25%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
+
 <body>
     <div class="main">
         <div class="column">
             <div class="content">
-                <a href="index.html"><img class="profile" src="media/profile.jpg"></a>
-                <h2>촬영장소<br><a style="text-decoration: none; color: white;" href="https://naver.me/5mBpKATd"><span>망원 한강공원</span></h2></a>
-                <img class="pictures" src="media/7:27_1.jpg" onclick="openImageInNewWindow"><p></p>
+                <a href="donghun.html"><img class="profile" src="media/profile.jpg"></a>
+                <h2>촬영장소<br><a style="text-decoration: none; color: white;" href="https://naver.me/xZDOpRx3"><span>망원 한강공원</span></h2></a>
+                <img class="pictures" src="media/7:27_1.jpg" onclick="openImageInNewWindow('media/7:27_1.jpg')"><p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/7:27_2.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/mangwon1.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/7:27_2.jpg" onclick="openImageInNewWindow('media/7:27_2.jpg')"><p></p>
+                <img class="pictures" src="media/mangwon1.jpg" onclick="openImageInNewWindow('media/mangwon1.jpg')"><p></p>
 
             </div>
         </div>
 
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/7:27_4.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/mangwon2.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/7:27_4.jpg" onclick="openImageInNewWindow('media/7:27_4.jpg')"><p></p>
+                <img class="pictures" src="media/mangwon2.jpg" onclick="openImageInNewWindow('media/mangwon2.jpg')"><p></p>
 
             </div>
         </div>
-        
+
         <div class="column">
             <div class="content">
-                <img class="pictures" src="media/7:27_6.jpg" onclick="openImageInNewWindow"><p></p>
-                <img class="pictures" src="media/mangwon3.jpg" onclick="openImageInNewWindow"><p></p>
+                <img class="pictures" src="media/7:27_6.jpg" onclick="openImageInNewWindow('media/7:27_6.jpg')"><p></p>
+                <img class="pictures" src="media/mangwon3.jpg" onclick="openImageInNewWindow('media/mangwon3.jpg')"><p></p>
             </div>
         </div>
     </div>
 
     <script>
         function openImageInNewWindow(imageSrc) {
-          window.open(imageSrc, '_blank');
+            window.open(imageSrc, '_blank');
         }
-      </script>
+    </script>
 </body>
+
 </html>
